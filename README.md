@@ -1,6 +1,3 @@
-
----
-
 # Supernatural Wiki Crawler GPT App
 
 ## Overview
