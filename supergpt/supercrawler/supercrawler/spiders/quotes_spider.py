@@ -11,8 +11,7 @@ class QuotesSpider(scrapy.Spider):
 
     def __init__(self: Self, episodes: List[str], *args, **kwargs):
         super(QuotesSpider, self).__init__(*args, **kwargs)
-        for episode in episodes:
-            self.start_urls.append(f"http://supernaturalwiki.com/{episode}")
+        self.start_urls = [f"http://supernaturalwiki.com/{episode}" for episode in episodes]
 
     def parse(self: Self, response: Response):
         pass
